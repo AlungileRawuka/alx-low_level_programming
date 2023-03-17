@@ -3,7 +3,7 @@
 /**
  * main - prints a string
  *
- * Returns: 0( after the code runs succesfully)
+ * Return: returns 0( after the code runs succesfully)
  */
 int main(void)
 {
