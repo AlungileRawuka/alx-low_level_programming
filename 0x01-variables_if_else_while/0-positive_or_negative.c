@@ -1,8 +1,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-
-/*
+/**
  * main - prints whethera randomly generated number is positive or negative
  *
  *Return: 0(success)
@@ -16,7 +15,7 @@ int main(void)
 
 	if (n > 0)
 	{
-		printf("%d is positie\n", n);
+		printf("%d is positive\n", n);
 	}
 	else if (n < 0)
 	{
