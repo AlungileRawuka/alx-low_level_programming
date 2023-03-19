@@ -21,8 +21,8 @@ int main(void)
 	int second_dgt;
 	int third_dgt;
 	int fourth_dgt;
-	int sum1;
-	int sum2;
+	int first_2;
+	int last_2;
 	int i;
 
 	i = 0;
@@ -33,10 +33,9 @@ int main(void)
 		second_dgt = (i / 100) % 10;
 		third_dgt = (i / 10) % 10;
 		fourth_dgt = i % 10;
-		sum1  = first_dgt + second_dgt;
-		sum2 = third_dgt + fourth_dgt;
-		if ((sum2 > sum1) || (sum1 == sum2 && first_dgt != third_dgt &&
-					second_dgt != fourth_dgt))
+		first_2  = (first_dgt * 10) + second_dgt;
+		last_2 = (third_dgt * 10) + fourth_dgt;
+		if (last_2 > first_2)
 		{
 			putchar(first_dgt + '0');
 			putchar(second_dgt + '0');
