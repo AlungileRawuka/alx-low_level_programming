@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * main - prints _putchar followed by a new line
  *
@@ -12,9 +12,9 @@ int main(void)
 
 	for (a = 0; a < 8; a++)
 	{
-		putchar(arr[a]);
+		_putchar(arr[a]);
 	}
-	putchar('\n');
+	_putchar('\n');
 
 	return (0);
 }
