@@ -18,16 +18,23 @@ void times_table(void)
 			{
 				_putchar(tens + '0');
 				_putchar(units + '0');
+
+				if (b != 9)
+				{
+					_putchar(',');
+					_putchar(' ');
+				}
 			}
-			else
+			if (product < 10)
 			{
 				_putchar(units + '0');
-			}
 
-			if (b != 9)
-			{
-				_putchar(',');
-				_putchar(' ');
+				if (b != 9)
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+				}
 			}
 		}
 		_putchar('\n');
