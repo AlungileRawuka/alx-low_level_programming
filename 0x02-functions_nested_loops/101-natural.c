@@ -3,8 +3,9 @@
 /**
  *add_multiples -computes a sum of multiples of 3 and 5  below 1024
  *
+ * Return: 0(Always)
  */
-void add_multiples(void)
+int add_multiples(void)
 {
 	int sum, n;
 
@@ -17,8 +18,8 @@ void add_multiples(void)
 			sum = sum + n;
 		n++;
 	}
-	printf("%d%c", sum, '\n');
+	printf("%d\n", sum);
 
-
+	return (0);
 
 }
