@@ -16,25 +16,24 @@ void times_table(void)
 			tens = product / 10;
 			if (product > 9)
 			{
-				_putchar(tens + '0');
-				_putchar(units + '0');
 
-				if (b != 9)
+				if (b > 0)
 				{
 					_putchar(',');
 					_putchar(' ');
 				}
+				_putchar(tens + '0');
+				_putchar(units + '0');
 			}
 			if (product < 10)
 			{
-				_putchar(units + '0');
-
-				if (b != 9)
+				if (b > 0)
 				{
 					_putchar(',');
 					_putchar(' ');
 					_putchar(' ');
 				}
+				_putchar(units + '0');
 			}
 		}
 		_putchar('\n');
