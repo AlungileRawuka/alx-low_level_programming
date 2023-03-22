@@ -1,11 +1,10 @@
-#include "main.h"
 #include <stdio.h>
 /**
- *add_multiples -computes a sum of multiples of 3 and 5  below 1024
+ *main -computes a sum of multiples of 3 and 5  below 1024
  *
  * Return: 0(Always)
  */
-int add_multiples(void)
+int main(void)
 {
 	int sum, n;
 
