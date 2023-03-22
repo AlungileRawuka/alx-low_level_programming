@@ -12,7 +12,7 @@ int main(void)
 	a = b = c = n1 = 1;
 	n2 = 2;
 	printf("%ld, %ld, ", n1, n2);
-	while (a < 99)
+	while (a < 97)
 	{
 		if (b == 1)
 		{
