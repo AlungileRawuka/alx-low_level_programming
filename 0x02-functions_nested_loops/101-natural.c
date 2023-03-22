@@ -17,7 +17,7 @@ void add_multiples(void)
 			sum = sum + n;
 		n++;
 	}
-	printf("%d", sum);
+	printf("%d%c", sum, '\n');
 
 
 
