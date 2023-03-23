@@ -22,6 +22,7 @@ void more_numbers(void)
 			_putchar(units + '0');
 			num++;
 		}
+		num = 0;
 		count++;
 		_putchar('\n');
 	}
