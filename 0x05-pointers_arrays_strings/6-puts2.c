@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * puts2 - updates a value a pointer points to to 98
+ * puts2 - prints every other value of a string
  * @str: pointer to a string
  *
  */
