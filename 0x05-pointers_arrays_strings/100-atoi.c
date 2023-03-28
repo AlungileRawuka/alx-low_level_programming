@@ -6,12 +6,14 @@
  */
 int _atoi(char *s)
 {
-	int i, a, b, num1, mul, num2;
+	unsigned int i, a, b, num1, num2, mul, count_neg;
 
-	i = num2 = 0;
+	i = num2 = a = count_neg = 0;
 	mul = 1;
 	while (*(s + i) != '\0')
 	{
+		if (*(s + i) == '-')
+			count_neg = count_neg + 1;
 		a = i;
 		if (*(s + a) >= '0' && *(s + a) <= '9')
 		{
@@ -31,9 +33,7 @@ int _atoi(char *s)
 		num2 = num2 + num1;
 		mul = mul / 10;
 	}
-	if ((*(s + 0) == '-' && i < 2) || (i >= 2 &&
-			*(s + i - 2) == '-' && *(s + i - 1) == '-'))
+	if (count_neg %  2 != 0)
 		num2 = -1 * num2;
-
 	return (num2);
 }
