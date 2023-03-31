@@ -7,7 +7,7 @@
  */
 char *rot13(char *s)
 {
-	int i, skip_if;
+	unsigned long int i, skip_if;
 
 	i = 0;
 	while (*(s + i) != '\n')
