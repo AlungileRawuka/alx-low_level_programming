@@ -9,7 +9,8 @@ char *leet(char *s)
 {
 	int a, i;
 
-	char *letters = "aeotl";
+	char *lower_alpha = "aeotl";
+	char *upper_alpha = "AEOTL";
 	char *num = "43071";
 
 	i = a = 0;
@@ -17,7 +18,7 @@ char *leet(char *s)
 	{
 		while (a < 5)
 		{
-			if (*(s + i) == *(letters + a) || *(s + i) == *(letters + a) - 32)
+			if (*(s + i) == *(lower_alpha + a) || *(s + i) == *(upper_alpha + a))
 			{
 				*(s + i) = *(num + a);
 			}
