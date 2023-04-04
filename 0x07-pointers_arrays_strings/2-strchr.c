@@ -24,6 +24,6 @@ char *_strchr(char *s, char c)
 	if (is_found)
 		return (s + a);
 	else
-		return ('\0');
+		return (NULL);
 
 }
