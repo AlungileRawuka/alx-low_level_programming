@@ -10,11 +10,11 @@ unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int length, a, i, is_found;
 
-	a = i = length = 0;
+	a = i = length = is_found = 0;
 	while (*(accept + a) != '\0')
 	{
-		is_found = 0;
 		i = 0;
+		is_found = 0;
 		while (*(s + i) != '\0')
 		{
 			if (*(accept + a) == *(s + i))
@@ -26,6 +26,8 @@ unsigned int _strspn(char *s, char *accept)
 			}
 			i++;
 		}
+		if (!is_found)
+			break;
 		a++;
 	}
 	if (!is_found)
