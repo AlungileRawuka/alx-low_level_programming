@@ -8,20 +8,19 @@
  */
 char *_strchr(char *s, char c)
 {
-	unsigned int a, is_found;
+	unsigned int a;
 
-	a = is_found = 0;
+	a = 0;
 
 	while (*(s + a) != '\0')
 	{
 		if (*(s + a) == c)
 		{
-			is_found = 1;
-			break;
+			return (s + a);
 		}
 		a++;
 	}
-	if (is_found)
+	if (*(s + a) == c)
 		return (s + a);
 	else
 		return (NULL);
