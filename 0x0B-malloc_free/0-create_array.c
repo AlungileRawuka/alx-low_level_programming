@@ -17,14 +17,8 @@ char *create_array(unsigned int size, char c)
 		return ('\0');
 
 	ch = malloc(size * sizeof(char));
-	while (a <= size)
+	while (a < size)
 	{
-		if (a == size)
-		{
-			ch[a] = ('\0');
-			break;
-		}
-
 		ch[a] = c;
 		a++;
 	}
