@@ -13,7 +13,12 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 		return (ptr);
 
 	if (ptr == NULL)
+	{
 		ptr = malloc(new_size);
+		if (ptr == NULL)
+			return (NULL);
+	}
+
 
 	if (new_size == 0 && ptr != NULL)
 	{
@@ -24,6 +29,8 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	free(ptr); /*Free memory previously allocated to old_size*/
 
 	ptr = malloc(new_size); /*reallocate memory to size new_size*/
+	if (ptr == NULL)
+		return (NULL);
 
 	return (ptr);
 }
