@@ -9,7 +9,7 @@
  */
 int *array_range(int min, int max)
 {
-	int n, a;
+	unsigned int n, a;
 	int *ptr;
 
 	a = 0;
